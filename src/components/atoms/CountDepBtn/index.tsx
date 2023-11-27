@@ -1,5 +1,5 @@
 import { useCountDepStore } from "@/pages/CountDep/index.store";
-
+import { Button } from "junyeol-components";
 export const CountDepBtn = () => {
   const [count, setCount] = useCountDepStore((state) => [
     state.count,
@@ -7,12 +7,9 @@ export const CountDepBtn = () => {
   ]);
 
   return (
-    <>
-      <pre>
-        <code></code>
-      </pre>
+    <Button>
       {count}
       <button onClick={() => setCount((count) => count + 1)}>count++</button>
-    </>
+    </Button>
   );
 };
