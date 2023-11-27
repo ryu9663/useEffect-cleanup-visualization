@@ -1,3 +1,5 @@
+import { Section } from "@/styles/theme";
+
 export const EmptyDep = () => {
-  return <div>EmptyDep</div>;
+  return <Section>EmptyDep</Section>;
 };
