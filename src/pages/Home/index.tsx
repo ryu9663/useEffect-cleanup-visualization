@@ -1,4 +1,4 @@
-import { Sidebar } from "@/components/Sidebar";
+import { Sidebar } from "@/components/molecules/SidebarBtn";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 

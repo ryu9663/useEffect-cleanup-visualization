@@ -1,4 +1,4 @@
-import { Button } from "junyeol-components";
+import { CountDepBtn, EmptySidebarBtn } from "@/components/atoms";
 import { memo } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -10,12 +10,12 @@ export const Sidebar = memo(
         <ul>
           <li className="list">
             <Link to="/empty-dep">
-              <Button className="button">empty-dep</Button>
+              <EmptySidebarBtn />
             </Link>
           </li>
           <li className="list">
             <Link to="/count-dep">
-              <Button className="button">count-dep</Button>
+              <CountDepBtn />
             </Link>
           </li>
         </ul>
