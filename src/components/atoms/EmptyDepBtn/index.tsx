@@ -8,9 +8,9 @@ export const EmptySidebarBtn = () => {
   ]);
 
   return (
-    <Button>
+    <Button onClick={() => setCount((count) => count + 1)}>
       {count}
-      <button onClick={() => setCount((count) => count + 1)}>count++</button>
+      <span>count++</span>
     </Button>
   );
 };
