@@ -1,3 +1,20 @@
+import { Sidebar } from "@/components/Sidebar";
+import { Outlet } from "react-router-dom";
+import styled from "styled-components";
+
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Main>
+      <Outlet />
+      <Sidebar />
+    </Main>
+  );
 };
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: row;
+
+  width: 100vw;
+  height: 100vh;
+`;
