@@ -4,12 +4,10 @@ import styled from "styled-components";
 
 export const Home = () => {
   return (
-    <>
-      <Main>
-        <Outlet />
-        <Sidebar />
-      </Main>
-    </>
+    <Main>
+      <Outlet />
+      <Sidebar />
+    </Main>
   );
 };
 
